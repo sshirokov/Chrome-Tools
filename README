@@ -1,4 +1,5 @@
 Chrome Tools
+Chrome Tools (n1ckn4m3 Fork)
 Chrome Tools is a collection of scripts that support users of Google's Chrome
 Browser and the Chromium Project. These include:
 chromium-updater.sh - Updates or installs the latest Chromium Browser.
@@ -18,3 +19,6 @@ http://build.chromium.org/buildbot/snapshots/chromium-rel-mac/
 
 More Detail:
 http://build.chromium.org/buildbot/waterfall/console
+
+Changelog:
+n1ckn4m3 - 07/09/12:  Automated killing the existing Chromium process and then restarting the browser after the upgrade.
