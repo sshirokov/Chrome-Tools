@@ -37,6 +37,5 @@ APP_NAME=$(basename ${FILE_NAME%%.zip}/*.app)
 [[ -d $APP_DIR/$APP_NAME ]] && mv $APP_DIR/$APP_NAME ./${APP_NAME%%.app}.$CURRENT_VER.app
 mv ${FILE_NAME%%.zip}/$APP_NAME $APP_DIR/$APP_NAME
 
-
 # Re-open newly downloaded version of Chromium
 open /$APP_DIR/$APP_NAME
