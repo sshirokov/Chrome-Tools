@@ -27,7 +27,7 @@ curl -L -O $BASE_URL/$LATEST_VER/$FILE_NAME
 unzip -qq $FILE_NAME
 
 # Check for running Chromium processes and kill them if they exist.
-if [ $APPCHK != '0' ];
+if [ $APPCHK != '1' ];
 then 
 killall -9 Chromium
 fi
