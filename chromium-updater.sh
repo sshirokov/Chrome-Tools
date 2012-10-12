@@ -12,7 +12,7 @@ APP_NAME=Chromium.app
 APPCHK=$(ps aux | grep -c Chromium)
 
 # check current revision number
-CURRENT_VER=$(/usr/libexec/PlistBuddy -c "print SVNRevision" $APP_DIR/$APP_NAME/Contents/Info.plist) || CURRENT_VER=0
+CURRENT_VER=$(/usr/libexec/PlistBuddy -c "print SCMRevision" $APP_DIR/$APP_NAME/Contents/Info.plist) || CURRENT_VER=0
 CHANGELOG="http://build.chromium.org/buildbot/perf/dashboard/ui/changelog.html?url=/trunk/src&range=$LATEST_VER:$CURRENT_VER&mode=html"
 echo $CHANGELOG | pbcopy
 # bail if there is not a newer version
